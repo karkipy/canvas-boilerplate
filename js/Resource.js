@@ -3,8 +3,8 @@
 // other resource will be assets such as loaded images or sound so as to be called when needed
 // rather than being assigned again will be stored into one single object
 
-const canvas = document.getElementById("canvas");
-const ctx = canvas.msGetInputContext("2d");
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
 const loadedImages = {};
 const loadedSounds = {};
 let animationReq;

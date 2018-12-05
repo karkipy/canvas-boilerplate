@@ -3,9 +3,9 @@
 
 
 const IMAGES = [
-  { id: 'SPRITE_INDICATOR', src : 'SPRITES' },
+  { id: PLAYER_INDICATOR, src : 'images/player.png' },
 ];
 
 const SOUNDS = [
-  { id: 'SPRITE_INDICATOR', src : 'SPRITES' },
+  { id: PLAYER_INDICATOR, src : 'sounds/hurricaneKick.mp3' },
 ];

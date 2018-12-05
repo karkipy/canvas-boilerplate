@@ -1,4 +1,3 @@
-function mainloop(){
-  animationId += 1;
+function mainLoop() {
   animationReq = requestAnimationFrame(mainLoop);
 }
