@@ -25,11 +25,11 @@ Core Files:
 
       ```javascript
         const IMAGES = [
-          { id: SPRITE_INDICATOR, src : 'images/something.png' },
+          { id: SPRITE_INDICATOR, src : 'images/player.png' },
         ];
 
         const SOUNDS = [
-          { id: SPRITE_INDICATOR, src : 'sounds/sound.wav' },
+          { id: SPRITE_INDICATOR, src : 'sounds/hurricaneKick.wav' },
         ];
       ```
       These will be called within the game by using the same indicator assigned to them.
@@ -52,7 +52,7 @@ Core Files:
 
 5) SpriteRenderer.js:
 
-      A single function that renders the image ,
+      A single function that renders the image,
 
       params :  SpriteRenderer(image, dimensions)
 
