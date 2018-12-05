@@ -13,7 +13,7 @@ Core Files:
 
 2) Indicator.js:
 
-      Each element is unquie in a game. Indicator will be linked with a player. Such that PLAYER_INDICATOR will be used further in game to call the resource such as images and sounds to be called only for these said speficic game element. <b> getUniqueIndicator() </b> gives the elment a uniqueIndicator rather than assuming/ assigning indicator a unique value one can do this. Example :
+      Each element is unquie in a game. Indicator will be linked with a player. Such that PLAYER_INDICATOR will be used further in game to call the resource such as images and sounds to be called only for these said specific game element. <b> getUniqueIndicator() </b> gives the elment a uniqueIndicator rather than assuming/ assigning indicator a unique value one can do this. Example :
 
       ```javascript
         const SPRITE_INDICATOR = getUniqueIndicator();
