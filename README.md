@@ -3,3 +3,82 @@
 This project is a simple empty skeleton for canvas games in html5. The main drive for this project is minimum use of asset re initalization and to provide efficency in rendering those said assets( images specifically).
 
 
+Core Files:
+
+1) Resource.js:
+
+      This contains the resource for the game such as the canvas and its context object which will be used throughout the game. It will contain other resource such as loadedImages and loadedSounds which will be constants and will be populated in loader.js file. The variables here will play as the core resource for any game.
+
+
+
+2) Indicator.js:
+
+      Each element is unquie in a game. Indicator will be linked with a player. Such that PLAYER_INDICATOR will be used further in game to call the resource such as images and sounds to be called only for these said speficic game element. <b> getUniqueIndicator() </b> gives the elment a uniqueIndicator rather than assuming/ assigning indicator a unique value one can do this. Example :
+
+      ```javascript
+        const SPRITE_INDICATOR = getUniqueIndicator();
+      ```
+
+3) Constant.js:
+
+      Here we will initalize assets such as images and sounds and provide them with id : Indicator for that element and the source for that asset. Example :
+
+      ```javascript
+        const IMAGES = [
+          { id: SPRITE_INDICATOR, src : 'images/something.png' },
+        ];
+
+        const SOUNDS = [
+          { id: SPRITE_INDICATOR, src : 'sounds/sound.wav' },
+        ];
+      ```
+      These will be called within the game by using the same indicator assigned to them.
+
+4) Helper.js:
+
+    Helper has functions that are Image and Sound helper.
+
+
+      a) getSpriteObject : returns an object which is used by spriteRenderer to render the image.
+      Params are explained here:
+
+      ![screen shot 2018-12-05 at 2 15 03 pm](https://user-images.githubusercontent.com/12614476/49500186-330ce280-f898-11e8-8314-c53867d2e536.png)
+
+      b) updateSpritePosition: params = (spriteDimension , x, y), to update x and y in canvas later on so as to animate the sprite.
+
+      c) playAudio: params = indicator, the indicator defined in Indicator.js
+
+      d) stopAudio: params = indicator, the indicator defiend in Indicator.js
+
+5) SpriteRenderer.js:
+
+      A single function that renders the image ,
+
+      params :  SpriteRenderer(image, dimensions)
+
+          image : the image object that will be inialized and can be called from loadedImages[Indicator],
+
+          dimensions: the dimension that you get from getSpriteObject
+
+
+
+6) MapConstant.js:
+
+      We map the sprite for an element here, again we will be assign the indicator so that to call the same dimension. Example:
+
+    ```javascript
+        const MAP_IMAGE = {
+          [SPRITE_INDICATOR]: [getSpriteObject(0,0,10,10, 0, 0, 10, 10)],
+        }
+
+    ```
+    Define an array for animation and just to display static image define assign a single value
+
+7) game.js:
+
+    Contains mainLoop, which is the function that will continually run after all assets are loaded.
+
+
+8) loader.js:
+
+    Contains onload function where you load the image and sound which is initalized with it's indicator to the loadedImages and loadedSounds and after loading all the assets calls the mainloop function of game.js

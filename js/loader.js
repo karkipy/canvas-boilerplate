@@ -19,7 +19,7 @@ window.onload = (e) => {
       loadedImages[id] = img;
       showPercentage(assetsLoaded, totalAssets); // Add an extra function to show progress
       if (totalAssets === assetsLoaded) {
-        showMenu();
+        mainloop();
       }
     }
   });
@@ -38,7 +38,7 @@ window.onload = (e) => {
       loadedSounds[id] = audio;
       showPercentage(assetsLoaded, totalAssets); // Add an extra function to show progress
       if (totalAssets === assetsLoaded) {
-        showMenu();
+        mainloop();
       }
     }
 
