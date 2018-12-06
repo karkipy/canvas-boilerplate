@@ -102,3 +102,9 @@ Example to animate ryu :
 
 
 https://medium.com/@aashish.y2z/using-canvas-boiler-plate-fdbde0478f77
+
+Output :
+
+
+![ezgif-2-2e1eea23a4cc](https://user-images.githubusercontent.com/12614476/49582328-d33c3780-f97c-11e8-9d0e-9e7f57efe380.gif)
+
