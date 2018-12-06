@@ -21,9 +21,12 @@ Core Files:
 
 3) Constant.js:
 
-      Here we will initalize assets such as images and sounds and provide them with id : Indicator for that element and the source for that asset. Example :
+      Here we will initalize assets such as images and sounds and provide them with id : Indicator for that element and the source for that asset. We will also include screen width and screen height for clearAll function to be used later on in game. Example :
 
       ```javascript
+        const SCREEN_WIDTH =  800;
+        const SCREEN_HEIGHT = 600;
+
         const IMAGES = [
           { id: SPRITE_INDICATOR, src : 'images/player.png' },
         ];
@@ -76,7 +79,13 @@ Core Files:
 
 7) game.js:
 
-    Contains mainLoop, which is the function that will continually run after all assets are loaded.
+    Contains all the game object such as player or enemy or even background with it's indicator as a inital param, other contents are initAll, clearAll and mainLoop
+
+    initAll: the function where you call setImage function for all the initaited object, to set the image for said object.
+
+    clearAll: a function that is a must for mainLoop to clear previously rendered sprites
+
+    mainLoop: which is the function that will continually run after all assets are loaded.
 
 
 8) loader.js:

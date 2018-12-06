@@ -1,10 +1,11 @@
 <html>
   <head>
-
+    <title> Canvas BoilerPlater</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div>
-      <canvas id="gameCanvas"></canvas>
+    <div class="canvas-container">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
     </div>
   </body>
 
@@ -17,12 +18,12 @@
   <!-- Helper Scripts -->
   <script src="js/Helper.js"></script>
   <script src="js/SpriteRenderer.js"></script>
+  <script src="js/GameObject.js"></script>
 
   <!-- Map dimensions of the sprite  -->
   <script src="js/MapConstant.js"></script>
 
   <!-- Game Element that are usable will be called here -->
-  <script src="js/GameObject.js"></script>
   <script src="js/Player.js"></script>
 
   <!-- The game's main entry point -->

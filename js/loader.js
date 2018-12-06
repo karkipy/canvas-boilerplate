@@ -1,5 +1,5 @@
 function showPercentage(loaded, total) {
-  // clearAll();
+  clearAll();
   const loadPercentage =  Math.round((loaded / total) * 100);
   ctx.font = "50px";
   ctx.fillText(loadPercentage + "%", 50, 100);
