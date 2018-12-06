@@ -5,4 +5,4 @@ function getUniqueIndicator() {
 }
 
 // Add indicators here and register them in Constant
-const PLAYER_INDICATOR = getUniqueIndicator();
+const RYU_INDICATOR = getUniqueIndicator();

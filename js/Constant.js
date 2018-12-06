@@ -5,9 +5,9 @@ const SCREEN_WIDTH =  800;
 const SCREEN_HEIGHT = 600;
 
 const IMAGES = [
-  { id: PLAYER_INDICATOR, src : 'images/player.png' },
+  { id: RYU_INDICATOR, src : 'images/player.png' },
 ];
 
 const SOUNDS = [
-  { id: PLAYER_INDICATOR, src : 'sounds/hurricaneKick.mp3' },
+  { id: RYU_INDICATOR, src : 'sounds/hurricaneKick.mp3' },
 ];
