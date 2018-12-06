@@ -11,5 +11,9 @@ canvas.addEventListener('keydown', function(evt){
 });
 
 window.addEventListener('keydown', function(evt){
-  console.log(evt)
-})
+  if (evt.key === 'h') {
+    stopAudio(RYU_INDICATOR);
+    playAudio(RYU_INDICATOR);
+    ryu.hurricaneKick();
+  }
+});

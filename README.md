@@ -87,7 +87,12 @@ Core Files:
 
     mainLoop: which is the function that will continually run after all assets are loaded.
 
+8) input.js:
 
-8) loader.js:
+    Contains the input handler for the game such as canvas mouse hover, canvas click and onkey press
+    events.
+
+
+9) loader.js:
 
     Contains onload function where you load the image and sound which is initalized with it's indicator to the loadedImages and loadedSounds and after loading all the assets calls the mainloop function of game.js
