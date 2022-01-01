@@ -6,3 +6,10 @@ function getUniqueIndicator() {
 
 // Add indicators here and register them in Constant
 const PLAYER_INDICATOR = getUniqueIndicator();
+const BACKGROUND_INDICATOR = getUniqueIndicator();
+const DOT_INDICATOR = getUniqueIndicator();
+const ENEMY_INDICATOR = getUniqueIndicator();
+const BLINKY_INDICATOR = getUniqueIndicator();
+const PINKY_INDICATOR = getUniqueIndicator();
+const INKY_INDICATOR = getUniqueIndicator();
+const CLYDE_INDICATOR = getUniqueIndicator();
